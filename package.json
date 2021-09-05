@@ -22,7 +22,10 @@
       ]
     }
   ],
-  "translations": {},
+  "translations": {
+    "fr-FR": "./languages/fr.json",
+    "pl-PL": "./languages/pl.json"
+  },
   "devDependencies": {
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",

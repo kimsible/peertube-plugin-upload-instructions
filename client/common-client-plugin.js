@@ -9,10 +9,10 @@ async function register ({ registerHook, peertubeHelpers }) {
     const { instructionsStatus, instructionsBody } = settings
 
     if (instructionsStatus) {
-      const { markdownRenderer, showModal } = peertubeHelpers
+      const { markdownRenderer, showModal, translate } = peertubeHelpers
 
       showModal({
-        title: 'Upload instructions',
+        title: await translate('Upload instructions'),
         content: await markdownRenderer.enhancedMarkdownToHTML(instructionsBody),
         confirm: {
           value: 'OK'
