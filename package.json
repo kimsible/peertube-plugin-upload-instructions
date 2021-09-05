@@ -1,0 +1,43 @@
+{
+  "name": "peertube-plugin-upload-instructions",
+  "description": "Show an instructions modal right before uploading",
+  "version": "0.0.0",
+  "author": "kimsible",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "peertube",
+    "plugin"
+  ],
+  "homepage": "https://github.com/kimsible/peertube-plugin-upload-instructions",
+  "bugs": "https://github.com/kimsible/peertube-plugin-upload-instructions/issues",
+  "engine": {
+    "peertube": ">=2.2.0"
+  },
+  "library": "./main.js",
+  "clientScripts": [
+    {
+      "script": "dist/common-client-plugin.js",
+      "scopes": [
+        "common"
+      ]
+    }
+  ],
+  "translations": {},
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "standard": "^16.0.3",
+    "vite": "^2.5.3"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && vite build"
+    }
+  },
+  "lint-staged": {
+    "*.js": "standard --fix"
+  }
+}
