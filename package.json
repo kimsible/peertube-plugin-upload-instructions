@@ -1,7 +1,7 @@
 {
   "name": "peertube-plugin-upload-instructions",
   "description": "Show an instructions modal right before uploading",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "kimsible",
   "license": "AGPL-3.0",
   "keywords": [
