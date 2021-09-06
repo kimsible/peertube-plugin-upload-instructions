@@ -38,7 +38,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && vite build"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
